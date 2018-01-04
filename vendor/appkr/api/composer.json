@@ -1,0 +1,48 @@
+{
+  "name": "appkr/api",
+  "description": "RESTful HTTP API dev tool for Laravel or Lumen based project",
+  "keywords": [
+    "laravel",
+    "restful api",
+    "fractal"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "appkr",
+      "email": "juwonkim@me.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.9",
+    "league/fractal": "0.14.*",
+    "shrikeh/teapot": "1.0.*"
+  },
+  "require-dev": {
+    "fzaninotto/faker": "~1.5",
+    "phpunit/phpunit": "~5.2",
+    "illuminate/console": "~5.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Appkr\\Api\\": "src/"
+    },
+    "files": [
+      "src/helpers.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Test\\": "tests/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0.x-dev"
+    }
+  },
+  "suggest": {
+    "barryvdh/laravel-cors": "Handle CORS issue",
+    "tymon/jwt-auth": "Protect your API with JSON Web Tokens"
+  }
+}

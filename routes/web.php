@@ -2,14 +2,11 @@
 
 
 Route::get('/',function (){
-    return view('welcome',[
-        'name' => 'Foo1',
-        'greeting' => '안녕하신가?',
-
-    ]);
+    $items = ['apple','bananan','toama'];
+    return view('welcome', ['items'=>$items]);
 });
 
-/*Route::get('/home', function(){
+/*route::get('/home', function(){
     return redirect(route('home'));
 });*/
 /*

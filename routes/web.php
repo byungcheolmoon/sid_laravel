@@ -4,7 +4,7 @@
 Route::get('/', [
     'as' => 'home',
     function(){
-      return '제이름은 홈1입니다.';
+      return '제이름은 홈311입니다.';
     }
 ]);
 

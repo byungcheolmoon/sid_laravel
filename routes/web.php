@@ -1,16 +1,17 @@
 <?php
 
 
-Route::get('/', [
-    'as' => 'home',
-    function(){
-      return '제이름은 홈123311입니다.';
-    }
-]);
+Route::get('/',function (){
+    return view('welcome',[
+        'name' => 'Foo1',
+        'greeting' => '안녕하신가?',
 
-Route::get('/home', function(){
-    return redirect(route('home'));
+    ]);
 });
+
+/*Route::get('/home', function(){
+    return redirect(route('home'));
+});*/
 /*
 Route::get('/', [
     'as' => 'root',
